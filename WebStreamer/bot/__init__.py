@@ -7,7 +7,7 @@ from pyrogram import Client
 from os import getcwd
 
 StreamBot = Client(
-    session_name="WebStreamer",
+    name="WebStreamer",  # <--- CORREGIDO: 'session_name' ahora es 'name'
     api_id=Var.API_ID,
     api_hash=Var.API_HASH,
     workdir="WebStreamer",
