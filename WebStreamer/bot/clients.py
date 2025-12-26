@@ -16,7 +16,7 @@ async def initialize_clients():
         return
     for client_id, token in all_tokens.items():
         instance = Client(
-            session_name=":memory:",
+            name=":memory:",
             api_id=Var.API_ID,
             api_hash=Var.API_HASH,
             bot_token=token,
